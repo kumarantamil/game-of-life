@@ -2,10 +2,10 @@
 
 node {
 stage ('checkout') {
-scm checkout
+checkout scm
 }
 stage ('build')
 {
-sh 'maven clean install'
+sh 'mvn clean install'
 }
 }
